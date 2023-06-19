@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* NAVBAR */
+.location {
+  font-weight: 600;
+  font-size: 24px;
+  color: #f31d1d;
+}
+
+.all-products {
+  font-weight: 600;
+  font-size: 18px;
+  color: #f31d1d;
+}
+
+.guests {
+  font-weight: 700;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.47);
+}
+/* END OF NAVBAR */
+
+/* FOOTER  */
+.footer .support,
+.footer .payment {
+  font-weight: 700;
+}
+
+.footer .support p:first-child,
+.footer .payment p:first-child {
+  font-size: 25.49px;
+}
+
+.footer .support p:nth-child(2),
+.footer .payment p:nth-child(2) {
+  font-size: 14.49px;
+}
+
+.footer .middle .help {
+  font-weight: 700;
+  font-size: 19.49px;
+}
+
+.footer .middle .number {
+  font-weight: 700;
+  font-size: 9.49px;
+}
+
+.footer .bottom .follow-us {
+  font-weight: 700;
+  font-size: 19.49px;
+}
+
+/* END OF FOOTER  */
