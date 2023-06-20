@@ -30,6 +30,62 @@ body {
 }
 /* END OF NAVBAR */
 
+/* HERO */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 0.8rem;
+}
+
+.cards {
+  border-radius: 10px;
+}
+
+.card-img {
+  position: relative;
+}
+
+.like-icon {
+  position: absolute;
+  top: 6px;
+  left: 230px;
+  cursor: pointer;
+}
+
+.cart-btn {
+  border: none;
+  background-color: #f31d1d;
+  color: white;
+  height: 43px;
+  width: 100%;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.burger-title {
+  font-weight: 600;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.86);
+}
+
+.burger-total {
+  font-size: 11px;
+  font-weight: 400;
+  color: #878787;
+}
+
+.burger-price {
+  font-size: 17px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.burger-price span {
+  margin-left: 5px;
+}
+/* END OF HERO */
+
 /* FOOTER  */
 .footer .support,
 .footer .payment {

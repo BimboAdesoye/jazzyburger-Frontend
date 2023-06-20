@@ -11,7 +11,7 @@ import dot from "../assets/jazzyburgerdot.svg";
 
 const Footer = () => {
   return (
-    <footer className="fixed-bottom footer">
+    <footer className="footer">
       <div className="bg-black">
         <div className="container py-5">
           <div className="top d-flex justify-content-between">
