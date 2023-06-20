@@ -26,7 +26,7 @@ const Home = () => {
         <img className="w-100" src={heroImg} alt="" />
       </div>
       <div className="row justify-content-between mt-5">
-        <div className="col-lg-4 jazzy-img">
+        <div className="col-lg-4 jazzy-img d-none d-lg-block">
           <img className="w-100" src={jazzyImg} alt="" />
         </div>
         <div className="col-lg-8">
