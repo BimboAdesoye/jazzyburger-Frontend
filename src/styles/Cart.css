@@ -1,0 +1,16 @@
+.cart {
+  position: absolute;
+  right: 7.8%;
+  top: 13vh;
+  width: 25%;
+  transform: translateX(140%);
+  transition: transform 0.5s ease-in;
+  background-color: white;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.cart-active {
+  transform: translateX(0);
+}

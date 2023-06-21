@@ -30,11 +30,11 @@ const Home = () => {
           <img className="w-100" src={jazzyImg} alt="" />
         </div>
         <div className="col-lg-8">
-          <div className="card-container">
+          <div className="card-container row">
             {data.map((datum) => {
               const { _id, title, price, image } = datum;
               return (
-                <div key={_id} className="border cards">
+                <div key={_id} className="border cards col p-0">
                   <div className="card-img">
                     <img className="w-100" src={image} alt="" />
                     <img className="like-icon" src={likeIcon} alt="" />

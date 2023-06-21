@@ -8,6 +8,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -28,13 +29,31 @@ body {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.47);
 }
+
+.nav-left {
+  gap: 2rem;
+}
+
+@media screen and (max-width: 575px) {
+  .bell,
+  .profile,
+  .cartIcon {
+    width: 29.33px;
+  }
+
+  .logo {
+    width: 41.54px;
+  }
+
+  .nav-left {
+    gap: 1rem;
+  }
+}
 /* END OF NAVBAR */
 
 /* HERO */
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 2rem;
+  row-gap: 1rem;
   column-gap: 0.8rem;
 }
 
@@ -48,8 +67,8 @@ body {
 
 .like-icon {
   position: absolute;
-  top: 6px;
-  left: 230px;
+  top: 0;
+  right: 0;
   cursor: pointer;
 }
 
@@ -115,6 +134,35 @@ body {
 .footer .bottom .follow-us {
   font-weight: 700;
   font-size: 19.49px;
+}
+
+.footer .getApp img {
+  max-width: 188px;
+  height: 56px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .bottom .follow-us {
+    text-align: center;
+  }
+
+  .footer .bottom .socials {
+    justify-content: center;
+  }
+
+  .footer .middle {
+    text-align: center;
+  }
+
+  .footer .middle .num {
+    margin-left: 16px;
+  }
+
+  .footer .getApp {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* END OF FOOTER  */
