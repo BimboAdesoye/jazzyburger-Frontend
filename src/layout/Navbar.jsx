@@ -44,11 +44,11 @@ const Navbar = () => {
           Click Me
         </button> */}
       </div>
-      <div onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>
+      {/* <div onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter}>
         <Cart
           className={`${regularClass} ${className ? "cart-active" : null}`}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

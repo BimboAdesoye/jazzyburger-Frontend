@@ -11,6 +11,11 @@ body {
   overflow-x: hidden;
 }
 
+.mycontainer {
+  width: 88%;
+  margin: 0 auto;
+}
+
 /* NAVBAR */
 .location {
   font-weight: 600;
@@ -52,8 +57,21 @@ body {
 /* END OF NAVBAR */
 
 /* HERO */
+
+@media screen and (min-width: 577px) {
+  .hero {
+    /* max-height: 1050px; */
+  }
+}
+
+.burger-img {
+  /* max-height: 168px; */
+}
+
 .card-container {
-  row-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
   column-gap: 0.8rem;
 }
 
@@ -76,21 +94,54 @@ body {
   border: none;
   background-color: #f31d1d;
   color: white;
-  height: 43px;
+  padding: 7px 0;
   width: 100%;
-  font-size: 24px;
-  border-radius: 10px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.cart-btn-font {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .cart-btn-font {
+    font-size: 0.7rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-btn-font {
+    font-size: 1.3rem;
+  }
+
+  .cart-btn {
+    gap: 20px;
+  }
+}
+
+.burger-body {
+  overflow-x: hidden;
 }
 
 .burger-title {
   font-weight: 600;
-  font-size: 11px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.86);
+  width: 150%;
 }
 
 .burger-total {
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 600;
   color: #878787;
 }
 
