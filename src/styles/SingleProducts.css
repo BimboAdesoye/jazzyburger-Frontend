@@ -40,10 +40,9 @@
   margin-top: 1rem;
 }
 
-.cart-btn {
+.cart-btn.single-cart-btn {
   width: 25%;
   margin-top: 1rem;
-  padding: ;
 }
 
 @media screen and (max-width: 1200px) {

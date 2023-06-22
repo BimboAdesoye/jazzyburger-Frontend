@@ -21,7 +21,7 @@ const SingleProducts = () => {
   );
   const { image, title, description, price } = data;
 
-  const [collapse, setCollapse] = useState(false);
+  const [collapse, setCollapse] = useState(true);
 
   const handleCollapse = () => {
     setCollapse(!collapse);
@@ -61,7 +61,7 @@ const SingleProducts = () => {
               <span>1</span>
               <img src={increasebtn} alt="" />
             </button>
-            <button className="cart-btn d-flex justify-content-center align-items-center">
+            <button className="cart-btn single-cart-btn d-flex justify-content-center align-items-center">
               <img className="" src={addIcon} alt="" />
               <span className="cart-btn-font">Add To Cart</span>
             </button>

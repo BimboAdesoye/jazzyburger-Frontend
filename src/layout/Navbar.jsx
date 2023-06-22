@@ -6,6 +6,7 @@ import arrowdown from "../assets/jazzyburgerArrowDownIcon.svg";
 import cartIcon from "../assets/jazzyburgerCartIcon.svg";
 import Cart from "../components/Cart";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Cart.css";
 
 const Navbar = () => {
@@ -23,7 +24,9 @@ const Navbar = () => {
   return (
     <div className="container d-flex justify-content-between className='mb-0'">
       <div className="brand d-flex align-items-center gap-4">
-        <img className="logo" src={logo} alt="" />
+        <Link to="/">
+          <img className="logo" src={logo} alt="" />
+        </Link>
         <img className="d-none d-lg-block" src={location} alt="" />
         <p className="mb-0 mt-1 location d-none d-lg-block">Lagos, Nigeria</p>
       </div>
