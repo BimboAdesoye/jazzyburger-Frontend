@@ -1,0 +1,143 @@
+.checkout {
+  display: flex;
+  padding: 95px 10px 93px 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fcfcfc;
+}
+
+.place-order,
+.checkout-cart {
+  border-radius: 5px;
+  border: 1px solid rgba(170, 170, 170, 0.4);
+  background: #fff;
+  /* box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.place-order {
+  padding: 1.4rem;
+  width: 58%;
+}
+
+.checkout-cart {
+  width: 40%;
+}
+
+.checkout-header,
+.checkout-info,
+.delivery-address,
+.checkout-cart-heading,
+.order,
+.Items {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.checkout-header {
+  max-width: 100%;
+}
+
+.checkout-heading {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.checkout-text {
+  color: #000000de;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.checkout-info p,
+.delivery-address p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.checkout-info button,
+.delivery-address button {
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-family: Open Sans;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+}
+
+.checkout-info,
+.delivery-address {
+  padding: 1rem 0;
+}
+
+.place-order-btn {
+  border: none;
+  border-radius: 7px;
+  background: #0c982b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.checkout-cart-heading {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.08px;
+}
+
+.checkout-cart-body {
+  height: 350px;
+}
+
+.order-title {
+  color: #f31d1d;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.08px;
+}
+
+.order button {
+  align-items: center;
+  background: rgba(255, 238, 238, 0.75);
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  padding: 0px 5px;
+  width: 123.025px;
+}
+
+.order button img {
+  width: 18px;
+}
+
+.Items p,
+.price {
+  color: #00000059;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Total p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .checkout {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .place-order,
+  .checkout-cart {
+    width: 100%;
+  }
+}

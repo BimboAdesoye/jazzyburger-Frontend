@@ -12,31 +12,49 @@ body {
 }
 
 .mycontainer {
-  width: 88%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.accent-container {
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 /* NAVBAR */
 .location {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 17px;
   color: #f31d1d;
 }
 
 .all-products {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   color: #f31d1d;
 }
 
-.guests {
-  font-weight: 700;
-  font-size: 18px;
+.guest {
+  font-weight: 600;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.47);
 }
 
 .nav-left {
   gap: 2rem;
+}
+
+.bell,
+.profile,
+.cartIcon,
+.arrow-down,
+.location-icon {
+  /* width: 29.33px; */
+  width: 23px;
+}
+
+.logo {
+  width: 83px;
 }
 
 @media screen and (max-width: 575px) {
@@ -47,7 +65,7 @@ body {
   }
 
   .logo {
-    width: 41.54px;
+    width: 50px;
   }
 
   .nav-left {
@@ -57,17 +75,6 @@ body {
 /* END OF NAVBAR */
 
 /* HERO */
-
-@media screen and (min-width: 577px) {
-  .hero {
-    /* max-height: 1050px; */
-  }
-}
-
-.burger-img {
-  /* max-height: 168px; */
-}
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -77,32 +84,58 @@ body {
 
 .cards {
   border-radius: 10px;
+  /* max-width: 230px;
+  max-height: 450px; */
 }
 
 .card-img {
   position: relative;
 }
 
-.like-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
+.hero {
+  height: fit-content;
+  /* outline: 1px solid red; */
+}
+
+.hero-banner {
+  border-radius: 1rem;
+}
+
+.jazzy-img {
+  height: 100%;
+}
+
+.icon-circle {
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 40px;
 }
 
 .cart-btn {
-  border: none;
   background-color: #f31d1d;
+  border-radius: 5px;
+  border: none;
   color: white;
+  gap: 10px;
   padding: 7px 0;
   width: 100%;
-  border-radius: 5px;
-  gap: 10px;
 }
 
 .cart-btn-font {
   font-size: 1rem;
 }
+
+/* .food-group {
+  width: 10rem;
+} */
 
 @media screen and (max-width: 992px) {
   .cart-btn-font {
@@ -125,6 +158,10 @@ body {
 
   .cart-btn {
     gap: 20px;
+  }
+
+  .hero-banner {
+    height: 194px;
   }
 }
 
@@ -179,7 +216,12 @@ body {
 
 .footer .middle .number {
   font-weight: 700;
-  font-size: 9.49px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer .middle .number:hover {
+  color: #bc2634;
 }
 
 .footer .bottom .follow-us {

@@ -1,25 +1,26 @@
 import UseFetch from "../Hooks/UseFetch";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
-import "../styles/SingleProducts.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import LikeIcon from "../assets/jazzyburgerLikeIcon.svg";
+// import LikeIcon from "../assets/jazzyburgerLikeIcon.svg";
+import "../styles/SingleProducts.css";
 import Naira from "../assets/jazzyburgerNairaIcon.png";
 import addIcon from "../assets/jazzyburgerAddToCartIcon.svg";
 import increasebtn from "../assets/jazzyburgerIncreaseIcon.svg";
 import decreasebtn from "../assets/jazzyburgerDecreaseIcon.svg";
 import expandicon from "../assets/expand_less_FILL0_wght400_GRAD0_opsz48.svg";
 import foodgroup from "../assets/jazzyburgerFoodGroup.svg";
-import { useState } from "react";
+import like from "../assets/jazzyburgerLikeIcon2.svg";
 
 const SingleProducts = () => {
   const { id } = useParams();
-  const { data } = UseFetch(
+  const { data: data1 } = UseFetch(
     `https://jazzyburger-abimbola.onrender.com/burger/single/${id}`
   );
-  const { data2 } = UseFetch(
+  const { data: data2 } = UseFetch(
     `https://jazzyburger-abimbola.onrender.com/burger/Burger`
   );
-  const { image, title, description, price } = data;
+  const { image, title, description, price } = data1;
 
   const [collapse, setCollapse] = useState(true);
 
@@ -49,7 +50,7 @@ const SingleProducts = () => {
               </span>
               <p className="mb-0 review">0 Reviews</p>
             </div>
-            <img className="likeicon" src={LikeIcon} alt="" />
+            <img className="likeicon" src={like} alt="" />
             <span className="price">
               <img className="nairaicon" src={Naira} alt="" />
               {price}.0

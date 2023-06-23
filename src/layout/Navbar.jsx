@@ -4,7 +4,7 @@ import bell from "../assets/jazzyburgerBellIcon.svg";
 import profile from "../assets/jazzyburgerProfileIcon.svg";
 import arrowdown from "../assets/jazzyburgerArrowDownIcon.svg";
 import cartIcon from "../assets/jazzyburgerCartIcon.svg";
-import Cart from "../components/Cart";
+// import Cart from "../components/Cart";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Cart.css";
@@ -22,23 +22,27 @@ const Navbar = () => {
   }
 
   return (
-    <div className="container d-flex justify-content-between className='mb-0'">
+    <div className="mycontainer d-flex justify-content-between mb-0 mt-3">
       <div className="brand d-flex align-items-center gap-4">
         <Link to="/">
           <img className="logo" src={logo} alt="" />
         </Link>
-        <img className="d-none d-lg-block" src={location} alt="" />
-        <p className="mb-0 mt-1 location d-none d-lg-block">Lagos, Nigeria</p>
+        <div className="d-flex gap-2 align-items-center">
+          <img className="d-none d-md-block d-lg-block location-icon" src={location} alt="" />
+          <p className="mb-0 mt-1 location d-md-block d-none d-lg-block">Lagos, Nigeria</p>
+        </div>
       </div>
       <div className="d-flex align-items-center nav-left">
         <div className="d-lg-flex align-items-end gap-3">
-          <img className="bell" src={bell} alt="" />
-          <p className="mb-0 all-products d-none d-lg-block">All Products</p>
+          <Link to="/CheckOut">
+            <img className="bell" src={bell} alt="" />
+          </Link>
+          <p className="mb-0 all-products d-none d-lg-block fw-bold">All products</p>
         </div>
-        <div className="d-lg-flex align-items-end gap-2">
+        <div className="d-flex align-items-end gap-2">
           <img className="profile" src={profile} alt="" />
-          <p className="mb-0 guests d-none d-lg-block">Hi, Guests</p>
-          <img className="mb-1 d-none d-lg-block" src={arrowdown} alt="" />
+          <p className="mb-0 guest d-none d-md-block d-lg-block">Hi, Guest</p>
+          <img className="mb-1 d-none d-lg-block arrow-down" src={arrowdown} alt="" />
         </div>
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <img className="cartIcon" src={cartIcon} alt="" />

@@ -5,6 +5,7 @@ import Footer from "./layout/Footer";
 import Home from "./components/Home";
 // import Cart from "./components/Cart";
 import SingleProduct from "./pages/SingleProduct";
+import CheckOut from "./components/CheckOut";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           {/* <Route path="/Cart" element={<Cart />} /> */}
           <Route path="/SingleProduct/:id" element={<SingleProduct />} />
+          <Route path="/CheckOut" element={<CheckOut />} />
         </Routes>
         <Footer />
       </BrowserRouter>
