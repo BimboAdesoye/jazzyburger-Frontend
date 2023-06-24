@@ -140,4 +140,9 @@
   .checkout-cart {
     width: 100%;
   }
+
+  .checkout-info button,
+  .delivery-address button {
+    max-width: 100%;
+  }
 }

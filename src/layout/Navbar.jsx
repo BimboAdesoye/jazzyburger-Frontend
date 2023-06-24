@@ -28,8 +28,14 @@ const Navbar = () => {
           <img className="logo" src={logo} alt="" />
         </Link>
         <div className="d-flex gap-2 align-items-center">
-          <img className="d-none d-md-block d-lg-block location-icon" src={location} alt="" />
-          <p className="mb-0 mt-1 location d-md-block d-none d-lg-block">Lagos, Nigeria</p>
+          <img
+            className="d-none d-md-block d-lg-block location-icon"
+            src={location}
+            alt=""
+          />
+          <p className="mb-0 mt-1 location d-md-block d-none d-lg-block">
+            Lagos, Nigeria
+          </p>
         </div>
       </div>
       <div className="d-flex align-items-center nav-left">
@@ -37,12 +43,18 @@ const Navbar = () => {
           <Link to="/CheckOut">
             <img className="bell" src={bell} alt="" />
           </Link>
-          <p className="mb-0 all-products d-none d-lg-block fw-bold">All products</p>
+          <p className="mb-0 all-products d-none d-lg-block fw-bold">
+            All products
+          </p>
         </div>
         <div className="d-flex align-items-end gap-2">
           <img className="profile" src={profile} alt="" />
           <p className="mb-0 guest d-none d-md-block d-lg-block">Hi, Guest</p>
-          <img className="mb-1 d-none d-lg-block arrow-down" src={arrowdown} alt="" />
+          <img
+            className="mb-1 d-none d-lg-block arrow-down"
+            src={arrowdown}
+            alt=""
+          />
         </div>
         <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <img className="cartIcon" src={cartIcon} alt="" />

@@ -49,7 +49,6 @@ body {
 .cartIcon,
 .arrow-down,
 .location-icon {
-  /* width: 29.33px; */
   width: 23px;
 }
 
@@ -84,8 +83,6 @@ body {
 
 .cards {
   border-radius: 10px;
-  /* max-width: 230px;
-  max-height: 450px; */
 }
 
 .card-img {
@@ -107,7 +104,7 @@ body {
 
 .icon-circle {
   align-items: center;
-  background-color: whitesmoke;
+  background-color: rgb(234, 234, 234);
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -133,11 +130,24 @@ body {
   font-size: 1rem;
 }
 
-/* .food-group {
-  width: 10rem;
-} */
+.burger-title {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
 
-@media screen and (max-width: 992px) {
+.burger-total {
+  margin-bottom: 1rem;
+}
+
+.burger-price {
+  margin-bottom: 3rem;
+}
+
+.food-group {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 991px) {
   .cart-btn-font {
     font-size: 0.7rem;
   }
@@ -174,22 +184,29 @@ body {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.86);
   width: 150%;
+  margin-bottom: 0.5rem;
 }
 
 .burger-total {
   font-size: 11px;
   font-weight: 600;
   color: #878787;
+  margin-bottom: 0.5rem;
 }
 
 .burger-price {
   font-size: 17px;
   font-weight: 600;
   color: #000000;
+  margin-bottom: 1rem;
 }
 
 .burger-price span {
   margin-left: 5px;
+}
+
+.food-group {
+  margin-bottom: 1rem;
 }
 /* END OF HERO */
 
@@ -233,6 +250,10 @@ body {
   max-width: 188px;
   height: 56px;
   width: 100%;
+}
+
+.footer .bottom .socials img {
+  width: 2.5rem;
 }
 
 @media screen and (max-width: 767px) {
